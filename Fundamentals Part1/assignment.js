@@ -1,3 +1,4 @@
+/*
 // Values and Variables
 // let country = 'Philippines';
 // let continent = 'Asia';
@@ -44,73 +45,101 @@ console.log(population > 6);
 console.log(population < 33);
 
 // qoute use
-// const description1 =
-//     country +
-//     ' is in ' +
-//     continent +
-//     ', and its ' +
-//     population +
-//     ' people speak ' +
-//     language;
+const description1 =
+    country +
+    ' is in ' +
+    continent +
+    ', and its ' +
+    population +
+    ' people speak ' +
+    language;
 
-// console.log(description1);
+console.log(description1);
 
 // String and Literals Use
-// const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
-// console.log(description);
+const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
+console.log(description);
 
 
 // Taking Decisions: if / else Statements
-// if (population > averageValue) {
-//     console.log(`${country}'s population is million above average`);
-// } else {
-//     console.log(
-//         `${country}'s population is ${averageValue - population} million below average`
-//     );
-// }
+if (population > averageValue) {
+    console.log(`${country}'s population is million above average`);
+} else {
+    console.log(
+        `${country}'s population is ${averageValue - population} million below average`
+    );
+}
 
 // Equality Operators: == vs. ===
-// const numNeighbours = Number
-//     (prompt('How many neighbour countries does your contry have?'));
 
-// if (numNeighbours == 1) {
-//     console.log('Only 1 border!');
-// } else if (numNeighbours > 1) {
-//     console.log('More Than 1 border');
-// } else {
-//     console.log('No borders')
-// }
+const numNeighbours = Number
+    (prompt('How many neighbour countries does your contry have?'));
+
+if (numNeighbours == 1) {
+    console.log('Only 1 border!');
+} else if (numNeighbours > 1) {
+    console.log('More Than 1 border');
+} else {
+    console.log('No borders')
+}
 
 // Logical Operators
 
-// if (language && population < 50 && !isIsland) {
-//     console.log(`You should live in ${country}`);
-// } else {
-//     console.log(`${country} does not meet your criteria :(`);
-// }
+if (language && population < 50 && !isIsland) {
+    console.log(`You should live in ${country}`);
+} else {
+    console.log(`${country} does not meet your criteria :(`);
+}
 
 // The switch Statement
 
-// switch (language) {
-//     case 'mandarin':
-//     case 'chinese':
-//         console.log('MOST number of native speakers!');
-//         break;
-//     case 'spanish':
-//         console.log('2nd place in number of native speakers');
-//         break;
-//     case 'english':
-//         console.log('3rd Place');
-//         break;
-//     case 'hindi':
-//         console.log('Number 4');
-//         break;
-//     case 'arabic':
-//         console.log('5th most spoken language');
-//         break;
-//     default:
-//         console.log('Great language too :D');
-// }
+switch (language) {
+    case 'mandarin':
+    case 'chinese':
+        console.log('MOST number of native speakers!');
+        break;
+    case 'spanish':
+        console.log('2nd place in number of native speakers');
+        break;
+    case 'english':
+        console.log('3rd Place');
+        break;
+    case 'hindi':
+        console.log('Number 4');
+        break;
+    case 'arabic':
+        console.log('5th most spoken language');
+        break;
+    default:
+        console.log('Great language too :D');
+}
 
 // The Conditional (Ternary) Operator
 console.log(`${country}'s population is ${population > 33 ? 'above' : 'below'} average`)
+*/
+
+// Coding Challenge #1 BMI CALCULATION
+
+let heightJohn, heightMark, massJohn, massMark, markHigherBMI;
+
+heightMark = 78;
+massMark = 1.69;
+
+heightJohn = 92;
+massJohn = 1.95;
+
+const bmiMarkCalc = massMark / (heightMark * heightMark);
+const bmiJohnCalc = massJohn / (heightJohn * heightJohn);
+
+console.log(`The BMI of Mark is ${bmiMarkCalc}`);
+console.log(`The BMI of John is ${bmiJohnCalc}`);
+
+if(bmiMarkCalc > bmiJohnCalc){
+    console.log(`Mark's BMI ${bmiMarkCalc} is higher than John's ${bmiJohnCalc}`);
+    markHigherBMI = true;
+    console.log(markHigherBMI);
+}else{
+    console.log(`John's BMI ${bmiJohnCalc} is higher than Mark's ${bmiMarkCalc}`);
+    markHigherBMI = false;
+    console.log(markHigherBMI);
+}
