@@ -117,29 +117,3 @@ switch (language) {
 // The Conditional (Ternary) Operator
 console.log(`${country}'s population is ${population > 33 ? 'above' : 'below'} average`)
 */
-
-// Coding Challenge #1 BMI CALCULATION
-
-let heightJohn, heightMark, massJohn, massMark, markHigherBMI;
-
-heightMark = 78;
-massMark = 1.69;
-
-heightJohn = 92;
-massJohn = 1.95;
-
-const bmiMarkCalc = massMark / (heightMark * heightMark);
-const bmiJohnCalc = massJohn / (heightJohn * heightJohn);
-
-console.log(`The BMI of Mark is ${bmiMarkCalc}`);
-console.log(`The BMI of John is ${bmiJohnCalc}`);
-
-if(bmiMarkCalc > bmiJohnCalc){
-    console.log(`Mark's BMI ${bmiMarkCalc} is higher than John's ${bmiJohnCalc}`);
-    markHigherBMI = true;
-    console.log(markHigherBMI);
-}else{
-    console.log(`John's BMI ${bmiJohnCalc} is higher than Mark's ${bmiMarkCalc}`);
-    markHigherBMI = false;
-    console.log(markHigherBMI);
-}
