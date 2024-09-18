@@ -1,3 +1,4 @@
+'using strict';
 /*
 function cutFruitPieces(fruit){
     return fruit * 4;
@@ -24,7 +25,7 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 
 
 if (retirement > 0){
-    console.log(`${firstname} retire in ${retirement} years`);
+    console.log(`${firstName} retire in ${retirement} years`);
     return retirement;
 }else{
     console.log(`${firstName} has already retired`);
