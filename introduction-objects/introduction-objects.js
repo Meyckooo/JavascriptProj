@@ -6,6 +6,7 @@
 //     ['Meycko', 'Mike', 'Xaviery'],
 // ];
 
+/*
 const jonas = {
     firstName: 'Jonas',
     lastName: 'Schmedtmann',
@@ -39,3 +40,23 @@ console.log(jonas);
 // Challenge
 // "Jonas has 3 friends, and his best friends is called Michael"
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his bestfriend is called ${jonas.friends[0]}`);
+*/
+
+
+// Object Methos
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    birthYear: 1991,
+    job: 'teacher',
+    friends: ['Meycko', 'Mike', 'Xaviery'],
+    hasDriversLicense: true,
+
+    calcAge: function (birthYear){
+        return 2037 - birthYear;
+    }
+};
+
+console.log(jonas.calcAge(1991));
+console.log(jonas['calcAge'](1991));
