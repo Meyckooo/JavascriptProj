@@ -7,6 +7,8 @@
 // ];
 
 /*
+
+// Object Property
 const jonas = {
     firstName: 'Jonas',
     lastName: 'Schmedtmann',
@@ -17,7 +19,7 @@ const jonas = {
 
 console.log(jonas);
 
-// Dot 
+// Dot Notation
 console.log(jonas.firstName + jonas.lastName);
 
 // Bracket Notation
@@ -29,7 +31,7 @@ const interestedIn = prompt('What do you wnat to know about Jonas? Choose betwee
 if(jonas[interestedIn]){
     console.log(jonas[interestedIn]);
 }else{
-    console.log('Jonas does not have information about this.')
+    console.log('Wrong request! Choose between firstName, lastName, age, job, friends.')
 }
 
 jonas.location = 'Portugal';
@@ -53,10 +55,16 @@ const jonas = {
     friends: ['Meycko', 'Mike', 'Xaviery'],
     hasDriversLicense: true,
 
-    calcAge: function (birthYear){
-        return 2037 - birthYear;
+    // calcAge: function (birthYear){
+    //     return 2037 - birthYear;
+    // }
+
+    calcAge: function (){
+        console.log(this);
+        return 2037 - this.birthYear;
     }
 };
 
 console.log(jonas.calcAge(1991));
-console.log(jonas['calcAge'](1991));
+
+// console.log(jonas['calcAge'](1991));
