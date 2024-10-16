@@ -45,7 +45,7 @@ console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his bes
 */
 
 
-// Object Methos
+// Object Methods
 
 const jonas = {
     firstName: 'Jonas',
