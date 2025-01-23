@@ -11,7 +11,5 @@ for(let i = 0; i < bills.length; i++){
     let temp = bills[i]
     totals += calcTip(temp)
 }
-
-
 // console.log(tips);
 console.log('total',totals / bills.length);
